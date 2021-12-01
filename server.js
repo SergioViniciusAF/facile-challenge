@@ -11,6 +11,7 @@ app.use(cors(corsOptions));
 app.use(express.json());
 
 app.use(express.urlencoded({extended :true}));
+
 const db = require("./app/models")
 db.sequelize.sync();
 
@@ -22,7 +23,7 @@ db.sequelize.sync({force:true}).then(() =>{
 app.get("/", (req, res) => {
     res.json({message: "Bem Vindo"});
 });
-
+require("./app/routes/names.routes")(app);
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, () =>{
     console.log(`server is running on port ${PORT}.`);
