@@ -1,3 +1,5 @@
+/*Mapeia a tabela name do banco de dados */
+
 const { Sequelize } = require("sequelize/dist");
 
 module.exports = (sequelize, Sequelize) => {
@@ -12,5 +14,6 @@ module.exports = (sequelize, Sequelize) => {
         }
 
     });
+
     return Names;
 };

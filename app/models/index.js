@@ -2,7 +2,7 @@ const dbConfig = require ("../config/db.config.js");
 
 const Sequelize = require ("sequelize");
 
-const sequelize = new Sequelize('postgres://bmitbkfk:7nH8KbaN-PxMXwr99gWhm_W7Frn29EE9@castor.db.elephantsql.com/bmitbkfk',{
+const sequelize = new Sequelize(dbConfig.dbURL,{
   
     dialect: dbConfig.dialect,
     operatorsAliases: false,
