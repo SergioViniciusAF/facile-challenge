@@ -17,6 +17,10 @@ db.sequelize.sync({force:true}).then(() =>{
     console.log("Sincronizando banco de dados...");
 });
 
+app.get("/", (req, res) => {
+    res.json({ message: "Bem vindo(a)!" });
+  });
+
 require("./app/routes/names.routes")(app);
 
 const PORT = process.env.PORT || 3333;
