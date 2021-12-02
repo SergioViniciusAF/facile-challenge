@@ -12,4 +12,5 @@
 ###### Como utilizar:
 
 > npm-init
+
 > npm install express sequelize pg pg-hstore cors --save
