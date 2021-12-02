@@ -2,8 +2,8 @@ const dbConfig = require ("../config/db.config.js");
 
 const Sequelize = require ("sequelize");
 
-const sequelize = new Sequelize(dbConfig.DB, dbConfig.USER, dbConfig.PASSWORD,{
-    host: dbConfig.HOST,
+const sequelize = new Sequelize('postgres://bmitbkfk:7nH8KbaN-PxMXwr99gWhm_W7Frn29EE9@castor.db.elephantsql.com/bmitbkfk',{
+  
     dialect: dbConfig.dialect,
     operatorsAliases: false,
 
@@ -19,7 +19,7 @@ const sequelize = new Sequelize(dbConfig.DB, dbConfig.USER, dbConfig.PASSWORD,{
 const db ={};
 
 db.Sequelize = Sequelize;
-db.Sequelize= Sequelize;
-db.tutorials = require("./names.model.js")(sequelize,Sequelize);
+db.sequelize= sequelize;
+db.Names = require("./names.model.js")(sequelize,Sequelize);
 
 module.exports = db;
