@@ -14,3 +14,9 @@
 > npm-init
 
 > npm install express sequelize pg pg-hstore cors --save
+
+###### Acesso:
+
+http://localhost:3333/encripts
+
+https://facile-challenge-app.herokuapp.com/encripts
