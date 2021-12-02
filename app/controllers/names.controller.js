@@ -13,7 +13,7 @@ exports.create = (req, res)=> {
     }
 
     const name = {
-        name : req.body.name
+        encripted_name: req.body.name
     };
     Names.create (name)
     .then(data => {
@@ -31,11 +31,11 @@ exports.create = (req, res)=> {
 // buscar parametro 
 exports.findOne = (req, res) =>{
 
-const id = req.params.id;
+const id =parseInt(req.params.id);
  Names.findByPk(id)
  .then(data =>{
      if (data){
-         res.send(data);
+         res.send({"id": data.id, "encripted_name": data.encripted_name});
      }else {
          res.status(404).send({
              message: `Não foi possivel encontrar o nome com a id = ${id}.`
