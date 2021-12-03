@@ -19,8 +19,11 @@
 
 ###### Acesso:
 
-- http://localhost:3333/encripts
-- https://facile-challenge-app.herokuapp.com/encripts
+- Local: http://localhost:3333/
+- Publicado: https://facile-challenge-app.herokuapp.com/
+
+GET: https://facile-challenge-app.herokuapp.com/encripts/:id
+POST: https://facile-challenge-app.herokuapp.com/encripts
 
 ###### Documentação (postman):
 
