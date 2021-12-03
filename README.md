@@ -15,6 +15,8 @@
 
 > npm install express sequelize pg pg-hstore cors --save
 
+> node server.js
+
 ###### Acesso:
 
 - http://localhost:3333/encripts
