@@ -23,6 +23,7 @@
 - Publicado: https://facile-challenge-app.herokuapp.com/
 
 GET: https://facile-challenge-app.herokuapp.com/encripts/:id
+
 POST: https://facile-challenge-app.herokuapp.com/encripts
 
 ###### Documentação (postman):
