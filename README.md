@@ -1,31 +1,39 @@
-# facile-challenge
+ 
+# Facile Challenge #
+##### Projeto desenvolvido para um processo seletivo, onde o app criptografa uma string enviada pelo usuário e devolve esta string encriptada e um id.
 
-###### App que criptografa uma string e devolve esta string desencriptografada.
+![image](https://user-images.githubusercontent.com/79481502/163032395-d2cf4a9e-1bc7-4e42-93b7-5ca8349723b9.png)
 
-###### Stacks:
+##### O app também busca a string encriptada pelo id e desincriptografa essa essa string.
+
+![image](https://user-images.githubusercontent.com/79481502/163032652-1ed97b73-6fdf-46b6-acb7-d0752cf8569f.png)
+
+## Tecnologias
 
 - NodeJS;
 - Express;
 - Sequelize;
-- Banco PostgreSQL.
+- Banco PostgreSQL
 
-###### Como utilizar:
+## Serviços Utilizados
+- Heroku
 
-> npm init
+## Como utilizar:
+- npm init
+- npm install express sequelize pg pg-hstore cors --save 
+- node server.js
 
-> npm install express sequelize pg pg-hstore cors --save
-
-> node server.js
-
-###### Acesso:
+## Links
 
 - Local: http://localhost:3333/
 - Publicado: https://facile-challenge-app.herokuapp.com/
-
-GET: https://facile-challenge-app.herokuapp.com/encripts/:id
-
-POST: https://facile-challenge-app.herokuapp.com/encripts
+- GET: https://facile-challenge-app.herokuapp.com/encripts/:id
+- POST: https://facile-challenge-app.herokuapp.com/encripts
 
 ###### Documentação (postman):
 
 - https://documenter.getpostman.com/view/18608587/UVJfkFqa
+
+## Autor
+
+Sérgio Freitas
